@@ -4,25 +4,6 @@ body{
     font-family: "Archivo Black", sans-serif;
 }
 
-.opener{
-    display: flex;
-    height: 100vh;
-    background-color: rgb(88, 1, 112);
-    color: rgb(252, 226, 255);
-    margin:0;
-    padding:0;
-    flex-direction: column;
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.first-name, .middle-name, .last-name{
-    flex-direction: column;
-    align-items: center;
-}
-
-
 .navbar{
     position: sticky;
     top: 0;
@@ -33,29 +14,6 @@ body{
     list-style-type: none;
     background-color:rgb(88, 1, 112);
     box-shadow: 0px 16px 32px rgba( 0, 0, 0, 0.5);
-}
-
-.first-name{
-    margin: -90px 4px;
-}
-
-.middle-name{
-    margin: -90px 4px;
-    flex-direction: row;
-}
-
-.middle_name_h1{
-    width:auto;
-
-}
-.opener-img{
-    left: 870px;
-    bottom:180px;
-    position: relative;
-    width: 400px;
-}
-.last-name{
-    margin: -500px 4px;
 }
 
 .navbar li{
@@ -73,9 +31,51 @@ body{
 .navbar a:hover{
     text-decoration: underline;
 }
+
+.opener{
+    display: flex;
+    height: 100vh;
+    background-color: rgb(88, 1, 112);
+    color: rgb(252, 226, 255);
+    margin:0;
+    padding:0;
+    flex-direction: column;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 50px;
+}
+
+.first-name{
+    margin: -90px 4px;
+    padding: 0px;
+}
+
+.middle-name{
+    margin: -60px 4px;
+    padding: 0px;
+}
+
+.middle_name_h1{
+    width:auto;
+
+}
+
+.opener-img{
+    left: 870px;
+    bottom:180px;
+    position: relative;
+    width: 400px;
+}
+
+.last-name{
+    margin: -500px 4px;
+}
+
 .opener h1{
     font-size: 100px;
 }
+
 .aboutme{
     height: 100vh;
     background-color: rgb(150, 0, 167);
@@ -83,6 +83,7 @@ body{
     padding:0;
     color: rgb(252, 226, 255);
 }
+
 .aboutme h2{
     font-size: 3em;
     font-weight: bold;
