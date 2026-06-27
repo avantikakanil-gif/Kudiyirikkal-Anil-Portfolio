@@ -1,7 +1,7 @@
 body{
     margin:0;
     padding:0;
-    font-family: "Archivo Black", sans-serif;
+    font-family: "Archivo Black", "Stack Sans Notch";
 }
 
 .navbar{
@@ -35,66 +35,271 @@ body{
 .opener{
     display: flex;
     height: 100vh;
+    justify-content: space-between;
+    align-items: center;
     background-color: rgb(88, 1, 112);
     color: rgb(252, 226, 255);
-    margin:0;
-    padding:0;
-    flex-direction: column;
-    font-family: "Archivo Black", sans-serif;
     font-weight: 400;
-    font-style: normal;
-    padding-top: 50px;
+    font-family: "Archivo Black", sans-serif;
+    padding: 0 2%;
+    overflow: hidden;
+
 }
 
-.first-name{
-    margin: -90px 4px;
-    padding: 0px;
+.name-container{
+    flex-direction: column;
+    display: flex;
+    z-index: 4;
+    animation: nameGrowth 3s ease-in-out infinite;
 }
 
-.middle-name{
-    margin: -60px 4px;
-    padding: 0px;
+.name-container h1{
+    font-size: 80px;
+    line-height: 0.9;
+    margin: 0;
+    z-index: 4;
 }
 
-.middle_name_h1{
-    width:auto;
-
+.navbar-img-container {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 700px;
+    height: 700px;
 }
 
 .opener-img{
-    left: 870px;
-    bottom:180px;
-    position: relative;
-    width: 400px;
+    width: 40vw;
+    z-index: 2;
+    position: absolute;
 }
 
-.last-name{
-    margin: -500px 4px;
+.details1-img {
+    width: 100vw;
+    z-index: 1;
+    right: -375px;
+    bottom: -200px;
+    position: absolute;
 }
 
-.opener h1{
-    font-size: 100px;
+@keyframes nameGrowth {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.05)
+    }
+    100%{
+        transform: scale(1.0);
+    }
 }
 
 .aboutme{
-    height: 100vh;
+    height: 70vh;
     background-color: rgb(150, 0, 167);
-    margin: -40px 0px;
-    padding:0;
+    margin: 0px 0px;
+    font-family: 'Stack Sans Notch';
     color: rgb(252, 226, 255);
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
 }
 
-.aboutme h2{
-    font-size: 3em;
+.aboutme-container {
+    flex-direction: column;
+}
+
+.aboutme-title{
+    font-size: 2.5em;
     font-weight: bold;
-    text-align: left;
-    margin: 20px 20px;
+}
+
+.aboutme-header {
+    width: 30vh;
+    text-align: center;
+    margin-left: 7vw;
+    margin-top: 8vh;
+    padding: 0;
+    border-radius: 2px;
+}
+.aboutme-content{
+    width: 30vw;
+    height: 50vh;
+    padding: 0;
+    margin-left: 8vw; 
+    font-size: 1.0em;
+    font-weight: none;
+    background-color:rgb(88, 1, 112);
+    border-radius: 2%;
+    box-shadow: 10px 15px 0px rgb(53, 1, 67, 1);
+    padding: 16px;
+    height: 170px;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.aboutme-content:hover {
+    transform: scale(1.2);
+}
+.aboutme-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-details-1{
+    z-index: 1;
+    width: 14vw;
+    margin-left: -65vw;
+    margin-top: -11vw;
+    position: absolute;
+    animation: gear-rotate 4s linear infinite;
+}
+
+.about-details-2{
+    z-index: 1;
+    width: 14vw;
+    margin-left: -28vw;
+    margin-top: 11vw;
+    position: absolute;
+    animation: gear-rotate 4s linear infinite;
+}
+
+@keyframes gear-rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+.about-me-img {
+    width: 22vw;
+    border-radius: 50%;
+    margin-left: -47vw;
+    z-index: 2;
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+}
+
+.about-me-img:hover{
+    transform: scale(1.1);
 }
 
 .projects{
     height: 100vh;
-    background-color: rgb(242, 124, 255);
-    margin: -27px 0px;
+    background-color: rgb(195, 76, 208);
+    font-family: "Stack Sans Notch";
+    margin: 0px 0px;
+    color: rgb(252, 226, 255);
+    display: flex;
+}
+
+.project-carousel {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.projects-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    width: 40vh;
+    text-align: center;
+    margin-left: 7vw;
+    margin-top: 7vh;
+    padding: 0;
+}
+
+.project-card-1{
+    background-color:rgb(88, 1, 112);
+    border-radius: 4%;
+    height: 30vw;
+    width: 25vw;
+    margin-left: 40vw;
+    margin-top: 17vh;
+    padding: 1.5vw;
+    text-align: center;
+    box-shadow: 10px 15px 0px rgb(53, 1, 67, 1);
+    position: relative;
+    transition: transform 2s ease-in-out;
+    opacity: 30%;
+}
+
+.project-card-2{
+    background-color:rgb(88, 1, 112);
+    border-radius: 4%;
+    height: 30vw;
+    width: 25vw;
+    margin-top: -62.7vh;
+    margin-left: 7vw;
+    padding: 1.5vw;
+    text-align: center;
+    box-shadow: 10px 15px 0px rgb(53, 1, 67, 1);
+    position: relative;
+    transition: transform 2s ease-in-out;
+    opacity: 100%;
+}
+
+.project-card-3{
+    background-color:rgb(88, 1, 112);
+    border-radius: 4%;
+    height: 30vw;
+    width: 25vw;
+    margin-left: -26vw;
+    margin-top: -62.7vh;
+    padding: 1.5vw;
+    text-align: center;
+    box-shadow: 10px 15px 0px rgb(53, 1, 67, 1);
+    position: relative;
+    transition: transform 2s ease-in-out;
+    opacity: 30%;
+}
+
+.project-card-1:hover{
+    box-shadow: 5px 7px 0px rgb(53, 1, 67, 1);
+}
+
+.project-card-2:hover{
+    box-shadow: 5px 7px 0px rgb(53, 1, 67, 1);
+}
+
+.project-card-3:hover{
+    box-shadow: 5px 7px 0px rgb(53, 1, 67, 1);
+}
+
+.project-btn-right-one {
+    margin-top: 85vh;
+    margin-left: -40vw;
+}
+
+.project-btn-right-two {
+    margin-top: 85vh;
+    margin-left: 13vw;
+}
+
+.project-btn-left-one {
+    margin-top: 85vh;
+    margin-left: -33vw;
+}
+
+.project-btn-left-two {
+    margin-top: 85vh;
+    margin-left: -33vw;
+}
+
+.project-btn-left-one,
+.project-btn-right-one {
+    z-index: 3;
+}
+
+.project-btn-left-two,
+.project-btn-right-two{
+    z-index: 2;
 }
 
 .experience{
@@ -113,4 +318,13 @@ body{
     height: 100vh;
     background-color: rgb(251, 218, 255);
     margin: -27px 0px;
+}
+
+button {
+    color: rgb(252, 226, 255);
+    background-color: rgb(123, 8, 121);
+    width: 10vw;
+    height: 10vh;
+    border-radius: 50px;
+    border-color: rgb(252, 226, 255);
 }
