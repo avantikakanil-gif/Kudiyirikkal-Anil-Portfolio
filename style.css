@@ -13,6 +13,7 @@ body{
     display: flex;
     list-style-type: none;
     background-color:rgb(88, 1, 112);
+    font-family: "Stack Sans Notch";
     box-shadow: 0px 16px 32px rgba( 0, 0, 0, 0.5);
 }
 
@@ -226,9 +227,30 @@ body{
     text-align: center;
     box-shadow: 10px 15px 0px rgb(53, 1, 67, 1);
     position: relative;
-    transition: transform 2s ease-in-out;
+    transition: transform 1s ease-in-out;
     opacity: 0.3;
 }
+
+.project-card-1 img {
+    width: 20vw;
+    align-self: center;
+}
+
+.project-card-1 button a {
+    color: rgb(252, 226, 255);  /* Ask TA how to make the button link work when you click the button not just the text */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: "Stack Sans Notch";
+}
+
+.project-card-1 button{
+    height: 7vh;
+}
+
+.project-card-1 button:hover{
+    text-decoration: underline;
+}
+
 
 .project-card-2{
     background-color:rgb(88, 1, 112);
@@ -241,7 +263,7 @@ body{
     text-align: center;
     box-shadow: 10px 15px 0px rgb(53, 1, 67, 1);
     position: relative;
-    transition: transform 2s ease-in-out;
+    transition: transform 1s ease-in-out;
     opacity: 1;
 }
 
@@ -256,7 +278,7 @@ body{
     text-align: center;
     box-shadow: 10px 15px 0px rgb(53, 1, 67, 1);
     position: relative;
-    transition: transform 2s ease-in-out;
+    transition: transform 1s ease-in-out;
     opacity: 0.3;
 }
 
@@ -320,7 +342,56 @@ body{
 .experience{
     height: 100vh;
     background-color: rgb(247, 164, 255);
-    margin: -27px 0px;
+    margin: 0px 0px;
+    font-family: "Stack Sans Notch";
+    color: rgb(150, 0, 167);
+    display: flex;
+}
+
+.experience-header {
+    font-size: 2.0em;
+    font-weight: bold;
+    width: 40vh;
+    text-align: center;
+    margin-left: 7vw;
+    margin-top: 1vh;
+}
+
+.catapult {
+    background-color:rgb(88, 1, 112);
+    border-radius: 4%;
+    height: 25vw;
+    width: 25vw;
+    padding: 1.5vw;
+    text-align: center;
+    box-shadow: 10px 15px 0px rgb(53, 1, 67, 1);
+    position: relative;
+    color: rgb(252, 226, 255);
+    transition: transform 1s ease-in-out;
+    margin-top: 0vh;
+    margin-left: 7vw;
+}
+
+.catapult:hover {
+    transform: scale(1.05);
+}
+
+.catapult h3 {
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.catapult a {
+    text-decoration: none;
+    color: rgb(252, 226, 255);
+}
+
+.catapult a:hover {
+    color: lightskyblue;
+}
+
+.catapult-image img {
+    border-radius: 50%;
 }
 
 .schooling{
