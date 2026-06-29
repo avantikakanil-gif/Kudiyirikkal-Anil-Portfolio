@@ -357,7 +357,7 @@ body{
     margin-top: 1vh;
 }
 
-.catapult {
+.catapult-content {
     background-color:rgb(88, 1, 112);
     border-radius: 4%;
     height: 25vw;
@@ -372,7 +372,7 @@ body{
     margin-left: 7vw;
 }
 
-.catapult:hover {
+.catapult-content:hover {
     transform: scale(1.05);
 }
 
@@ -392,6 +392,8 @@ body{
 
 .catapult-image img {
     border-radius: 50%;
+    margin-left: 55vw;
+    margin-top: -530vh;
 }
 
 .schooling{
