@@ -1,7 +1,7 @@
 body{
     margin:0;
     padding:0;
-    font-family: "Archivo Black", "Stack Sans Notch";
+    font-family: "Archivo Black", "Google Sans";
 }
 
 .navbar{
@@ -13,7 +13,7 @@ body{
     display: flex;
     list-style-type: none;
     background-color:rgb(88, 1, 112);
-    font-family: "Stack Sans Notch";
+    font-family: "Google Sans";
     box-shadow: 0px 16px 32px rgba( 0, 0, 0, 0.5);
 }
 
@@ -44,7 +44,6 @@ body{
     font-family: "Archivo Black", sans-serif;
     padding: 0 2%;
     overflow: hidden;
-
 }
 
 .name-container{
@@ -99,7 +98,7 @@ body{
     height: 70vh;
     background-color: rgb(150, 0, 167);
     margin: 0px 0px;
-    font-family: 'Stack Sans Notch';
+    font-family: 'Google Sans';
     color: rgb(252, 226, 255);
     display: flex;
     justify-content: space-between;
@@ -194,10 +193,11 @@ body{
 .projects{
     height: 100vh;
     background-color: rgb(195, 76, 208);
-    font-family: "Stack Sans Notch";
+    font-family: "Google Sans";
     margin: 0px 0px;
     color: rgb(252, 226, 255);
     display: flex;
+    overflow: hidden;
 }
 
 .project-carousel {
@@ -229,6 +229,7 @@ body{
     position: relative;
     transition: transform 1s ease-in-out;
     opacity: 0.3;
+    font-size: 1.1em;
 }
 
 .project-card-1 img {
@@ -240,7 +241,7 @@ body{
     color: rgb(252, 226, 255);  /* Ask TA how to make the button link work when you click the button not just the text */
     text-decoration: none;
     font-size: 1.1em;
-    font-family: "Stack Sans Notch";
+    font-family: "Google Sans";
 }
 
 .project-card-1 button{
@@ -265,6 +266,7 @@ body{
     position: relative;
     transition: transform 1s ease-in-out;
     opacity: 1;
+    font-size: 1.1em;
 }
 
 .project-card-3{
@@ -280,6 +282,7 @@ body{
     position: relative;
     transition: transform 1s ease-in-out;
     opacity: 0.3;
+    font-size: 1.1em;
 }
 
 .project-card-1:hover{
@@ -343,9 +346,10 @@ body{
     height: 100vh;
     background-color: rgb(247, 164, 255);
     margin: 0px 0px;
-    font-family: "Stack Sans Notch";
+    font-family: "Google Sans";
     color: rgb(150, 0, 167);
     display: flex;
+    overflow: hidden;
 }
 
 .experience-header {
@@ -370,6 +374,7 @@ body{
     transition: transform 1s ease-in-out;
     margin-top: 0vh;
     margin-left: 7vw;
+    z-index: 2;
 }
 
 .catapult-content:hover {
@@ -388,24 +393,367 @@ body{
 
 .catapult a:hover {
     color: lightskyblue;
+    color: rgb(123, 8, 121)
 }
 
-.catapult-image img {
+.experience-flip {
+    background-color: transparent;
+    perspective: 1000px;
+    margin-left: 710px;
+    margin-top: -300px;
+    width: 22vw;
+    height: 22vw;
+}
+
+.experience-flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+
+}
+
+.experience-flip-front,
+.experience-flip-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden; /*Makes the backface also hidden in Safari browsers*/
+    backface-visibility: hidden;
+}
+
+.experience-flip-front {
+    z-index:2;
+}
+
+.experience-flip-back {
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.catapult-image {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    margin-left: 55vw;
-    margin-top: -530vh;
+    object-fit: cover;
 }
 
-.schooling{
+.signature-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.catapult-details-1-img {
+    margin-top: -24px; 
+    margin-left: 509px;
+    z-index: 0;
+    width: 14vw;
+    position: absolute;
+    animation: gear-rotate 4s linear infinite;
+}
+
+.catapult-details-2-img {
+    z-index: 0;
+    width: 14vw;
+    margin-left:736px;
+    margin-top: 136px;
+    position: absolute;
+    animation: gear-rotate 4s linear infinite;
+}
+
+.signature-content {
+    background-color:rgb(88, 1, 112);
+    border-radius: 4%;
+    height: 25vw;
+    width: 25vw;
+    padding: 1.5vw;
+    text-align: center;
+    box-shadow: 10px 15px 0px rgb(53, 1, 67, 1);
+    position: relative;
+    color: rgb(252, 226, 255);
+    transition: transform 1s ease-in-out;
+    margin-top: -336px;
+    margin-left: 7vw;
+    font-size: 0.9em;
+    z-index: 1;
+}
+
+.experience-right-one {
+    position: relative;
+    margin-left: 600px;
+    top: 10vh;
+    z-index: 5;
+
+}
+
+.experience-left-one {
+    position: relative;
+    margin-left: 350px;
+    top: -0.3vh;
+    z-index: 5;
+
+}
+
+.experience-right-two {
+    position: relative;
+    margin-left: 600px;
+    top: -10vh;
+    z-index: 5;
+}
+
+.experience-left-two {
+    position: relative;
+    top: -20.3vh;
+    margin-left: 350px;
+    z-index: 5;
+
+}
+
+.skills{
     height: 100vh;
     background-color: rgb(250, 197, 255);
-    margin: -27px 0px;
+    margin: 0px 0px;
+    font-family: "Google Sans";
+    color: rgb(123, 8, 121);
+    display: block;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.skills-header{
+    font-size: 2em;
+    text-align: center;
+    margin-left: 0vw;
+    height: 20vw;
+    width: 70vw;
+    margin-top: 8vh;
+    padding: 0;
+    border-radius: 2px;
+}
+
+.skills h2,
+.contact h2 {
+    margin-top: 0;
+}
+
+.side-profile-img {
+    position: relative;
+    top: -40vh;
+    max-width: 60vw;
+    margin-left: 50vw;
+}
+
+.style {
+    position: relative;
+    z-index: 10;
+    margin-top: -70vw;
+    margin-left: 70vw;
+}
+
+.style:hover {
+    text-decoration: underline;
+}
+
+.index {
+    position: relative;
+    z-index: 10;
+    margin-left: 79vw;
+    margin-top: -5vh;
+}
+
+.index:hover {
+    text-decoration: underline;
+}
+
+.script {
+    position: relative;
+    z-index: 10;
+    margin-left: 87vw;
+    margin-top: 7vh;
+}
+
+.script:hover {
+    text-decoration: underline;
+}
+
+.python {
+    position: relative;
+    z-index: 10;
+    margin-left: 86vw;
+    margin-top: 12vh;
+}
+
+.python:hover {
+    text-decoration: underline;
+}
+
+.robotics {
+    position: relative;
+    z-index: 10;
+    margin-left: 75vw;
+    margin-top: -13vh;
+}
+
+.robotics:hover {
+    text-decoration: underline;
+}
+
+.art {
+    position: relative;
+    z-index: 10;
+    margin-left: 68.5vw;
+    margin-top: -12vh;
+    width: 10vw;
+}
+
+.art:hover {
+    text-decoration: underline;
+}
+
+.art-content {
+    background-color:rgb(88, 1, 112);
+    border-radius: 4%;
+    height: 25vw;
+    width: 25vw;
+    padding: 1.5vw;
+    text-align: center;
+    box-shadow: 10px 15px 0px rgb(53, 1, 67, 1);
+    position: relative;
+    color: rgb(252, 226, 255);
+    transition: transform 1s ease-in-out;
+    margin-top: -53vh;
+    margin-left: 15vw;
+    z-index: top;
+}
+
+.art-header,
+.art-para {
+    font-size: 1.5em;
+}
+
+.style-content {
+    margin-top: -20vh;
+    margin-left: 15vw;
+    background-color:rgb(88, 1, 112);
+    border-radius: 4%;
+    height: 25vw;
+    width: 25vw;
+    padding: 1.5vw;
+    text-align: center;
+    box-shadow: 10px 15px 0px rgb(53, 1, 67, 1);
+    position: relative;
+    color: rgb(252, 226, 255);
+    transition: transform 1s ease-in-out;
+}
+
+.index-content {
+    margin-top: -50vh;
+    margin-left: 15vw;
+    background-color:rgb(88, 1, 112);
+    border-radius: 4%;
+    height: 25vw;
+    width: 25vw;
+    padding: 1.5vw;
+    text-align: center;
+    box-shadow: 10px 15px 0px rgb(53, 1, 67, 1);
+    position: relative;
+    color: rgb(252, 226, 255);
+    transition: transform 1s ease-in-out;
+}
+
+.script-content {
+    margin-top: -53vh;
+    margin-left: 15vw;
+    background-color:rgb(88, 1, 112);
+    border-radius: 4%;
+    height: 27vw;
+    width: 25vw;
+    padding: 1.5vw;
+    text-align: center;
+    box-shadow: 10px 15px 0px rgb(53, 1, 67, 1);
+    position: relative;
+    color: rgb(252, 226, 255);
+    transition: transform 1s ease-in-out;
+}
+
+.python-content{
+    background-color:rgb(88, 1, 112);
+    border-radius: 4%;
+    height: 27vw;
+    width: 25vw;
+    padding: 1.5vw;
+    text-align: center;
+    box-shadow: 10px 15px 0px rgb(53, 1, 67, 1);
+    position: relative;
+    color: rgb(252, 226, 255);
+    transition: transform 1s ease-in-out;
+    margin-top: -59vh;
+    margin-left: 15vw;
+}
+
+.robotics-content {
+    background-color:rgb(88, 1, 112);
+    border-radius: 4%;
+    height: 27vw;
+    width: 25vw;
+    padding: 1.5vw;
+    text-align: center;
+    box-shadow: 10px 15px 0px rgb(53, 1, 67, 1);
+    position: relative;
+    color: rgb(252, 226, 255);
+    transition: transform 1s ease-in-out;
+    margin-top: -59vh;
+    margin-left: 15vw;
+}
+
+.robotics-header,
+.robotics-para {
+    font-size: 1.4em;
+}
+
+.python-header,
+.python-para {
+    font-size: 1.4em;
+}
+
+.script-header,
+.script-para {
+    font-size: 1.5em;
+}
+
+.index-header,
+.index-para {
+    font-size: 1.5em;
+}
+
+.style-header {
+    font-size: 1.5em;
+}
+
+.style-para {
+    font-size: 1.5em;
 }
 
 .contact{
     height: 100vh;
     background-color: rgb(251, 218, 255);
-    margin: -27px 0px;
+    margin: 0px 0px;
+    font-family: "Google Sans";
+    color: rgb(123, 8, 121);
+    overflow: hidden;
+}
+
+.contact-header {
+    position: relative;
+    width: 60vh;
+    text-align: center;
+    margin-left: 5vw;
+    margin-top: 10vh;
+    border-radius: 2px;
+    font-size: 2.0em;
 }
 
 button {
