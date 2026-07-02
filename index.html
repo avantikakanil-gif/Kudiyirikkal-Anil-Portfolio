@@ -18,16 +18,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class = "body">
     <ul class="navbar">
-        <li><a href= "#">Home</a></li>
-        <li><a href= "#">About Me</a></li>
-        <li><a href= "#">Projects</a></li>
-        <li><a href= "#">Experience</a></li>
-        <li><a href= "#">Contact Me</a></li>
+        <li class = "home"><a href = "#home">Home</a></li>
+        <li class = "about"><a href = "#about">About Me</a></li>
+        <li class = "prjct"><a href = "#prjct">Projects</a></li>
+        <li class = "experience-nav"><a href = "#experience-link">Experience</a></li>
+        <li class = "skills-nav"><a href = "#skills-link">Skills</a></li>
+        <li class = "access-nav"><a href = "accessibility.html">Accessibility</a></li>
+        <li class = "src-nav"><a href = "#">Sources</a></li>
+        <li class = "contact-nav"><a href = "#contact-link">Contact Me</a></li>
     </ul>
 
-    <div class="opener">
+    <div id = "home" class="opener">
         <div class="name-container">
             <h1>AVANTIKA</h1>
             <h1>KUDIYIRIKKAL</h1>
@@ -39,7 +42,7 @@
         </div>
     </div>
 
-    <div class="aboutme">
+    <div id  = "about" class="aboutme">
         <div class = "aboutme-header">
         <div class = "aboutme-container">
         <h2 class = "aboutme-title">About Me:</h2>
@@ -54,36 +57,36 @@
             <img  class = "about-me-img" src="avantikakanil2.jpg" alt="Avantika's Headshot.">
         </div>
     </div>
-    <div class="projects">
+    <div id = "prjct" class="projects">
         <h2 class = "projects-title">My Projects:</h2>
         <div class = "project-carousel">
             <div class = "project-card-1">
                 <h3>Website for Change</h3>
                 <img src = "Screenshot_28-6-2026_20827_127.0.0.1.jpeg" alt = "A screenshot of Avantika's website advocating against pollution.">
-                <h4>Using only HTML and CSS, I created an dynamic website advocating against pollution for my Website for Change.</h4>
+                <h4>Using only HTML and CSS, I created a dynamic website advocating against pollution for my Website for Change.</h4>
                 <a href = "" target = "_blank"><button>Visit</button></a>            
             </div>
             <div class = "project-card-2">
-                <h3>Website for Change</h3>
-                <img src = "#" alt = "A screenshot of Avantika's website advocating against pollution.">
-                <h4>Using only HTML and CSS, I created an dynamic website advocating against pollution for my Website for Change.</h4>
+                <h3>A Bird's Tale</h3>
+                <img src = "#" alt = "A screenshot of Avantika's choose-your-own-adventure game.">
+                <h4>In my first project exploring JavaScript, I created a choose-your-own-adventure game exploring the life of a bird.</h4>
+                <a href = "" target = "_blank"><button>Visit</button></a>
             </div>
             <div class = "project-card-3">
-                <h3>Website for Change</h3>
-                <img src = "#" alt = "A screenshot of Avantika's website advocating against pollution.">
-                <h4>Using only HTML and CSS, I created an dynamic website advocating against pollution for my Website for Change.</h4>
+                <h3>Rock Paper Scissors</h3>
+                <img src = "Screenshot_2-7-2026_14725_127.0.0.1.jpeg" alt = "A screenshot of Avantika's rock paper scissors game.">
+                <h4>Using JavaScript, HTML, and CSS, I created an interactive rock paper scissors game in which players compete against a computer.</h4>
+                <a href = "" target = "_blank"><button>Visit</button></a>
             </div>
         </div>
         <button class = "project-btn-right-one">>></button>
         <button class = "project-btn-right-disabled">>></button>
         <button class = "project-btn-right-two">>></button>
-        <button class = "project-btn-right-disabled-two">>></button>
         <button class = "project-btn-left-one"><<</button>
         <button class = "project-btn-left-disabled"><<</button>
         <button class = "project-btn-left-two"><<</button>
-        <button class = "project-btn-left-three"><<</button>
     </div>
-    <div class="experience">
+    <div id = "experience-link" class="experience">
         <div class="experience-header">
             <h2>Experience:</h2>
             <div class = "catapult">
@@ -118,7 +121,7 @@
             <button class = "experience-left-two"><<</button>
         </div>
     </div>
-    <div class="skills">
+    <div id = "skills-link"class="skills">
         <div class = "skills-header">
             <h2>What's Going On Inside My Head?</h2>
         </div>
@@ -158,10 +161,19 @@
             </div>
         </div>
     </div>
-    <div class="contact">
+    <div id = "contact-link" class="contact">
         <div class = "contact-header">
         <h2>Contact Me:</h2>
         </div>
+        <div class = "contact-content">
+        <h3 class = "phone">My Phone Number: +1(812)706-8008</h3>
+        <h3 class = "email"><a href="mailto:avantikakudiyirikkal29@student.signature.edu?subject=Enter your subject here!&body=Enter your message here!">Click on this to email me!</a></h3>
+        </div>
     </div>
+    <footer>
+        <p>&copy Avantika Kudiyirikkal Anil 2026</p>
+        <button class = "dark">Enable</button>
+    </footer>
     <script src="script.js"></script>
+    <script src="accessibility.js"></script>
 </body>

@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(252, 226, 255);
+    color: rgb(88, 1, 112);
+    display: flex;
+    font-family: "Google Sans";
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    font-family: "Google Sans";
+    margin-top: 5vh;
+    margin-left: 40vw;
+    height: 10vh;
+}
+
+h1:hover {
+    text-decoration: underline;
+}
+
+.features{
+    margin-top: 15vh;
+    margin-left: -50vw;
+    font-family: "Google Sans";
+    gap: 3rem;
+}
+
+.function-enablers{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60vw;
+}
+
+button:hover{
+    text-decoration: underline;
+}

@@ -29,6 +29,7 @@ let pythonContent = document.querySelector(".python-content");
 let roboticsContent = document.querySelector(".robotics-content");
 let artContent = document.querySelector(".art-content");
 
+
 experienceBtnRightTwo.style.display = "none";
 experienceBtnLeftTwo.style.display = "none";
 styleContent.style.display = "none";
@@ -149,13 +150,14 @@ projectBtnLeftDisabled.addEventListener("click", function(){
     projectCard3.style.opacity = "0.3";
 
     projectBtnLeftTwo.style.display = "none";
-    projectBtnLeftDisabled.style.display = "block";
+    projectBtnRightDisabled.style.display = "block";
     projectBtnLeftOne.style.display = "none";
-    projectBtnRightDisabled.style.display = "none";
+    projectBtnLeftDisabled.style.display = "none";
     projectBtnRightOne.style.display = "none";
-    projectBtnRightTwo.style.display = "block";
-    projectBtnLeftDisabled.style.transform = "translateX(-53vw)";
-    projectBtnRightTwo.style.transform = "translateX(-30vw)";
+    projectBtnLeftTwo.style.display = "block";
+    projectBtnRightTwo.style.display = "none";
+    projectBtnRightDisabled.style.transform = "translateX(-30vw)";
+    projectBtnLeftTwo.style.transform = "translateX(-53vw)";
     console.log("6");
 });
 
