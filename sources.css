@@ -2,6 +2,8 @@ body {
     background-color: rgb(252, 226, 255);
     color: rgb(88, 1, 112);
     font-family: "Google Sans";
+    margin: 0;
+    padding:0;
 }
 
 body.darkmode {
@@ -10,9 +12,64 @@ body.darkmode {
     font-family: "Google Sans";
 }
 
-.navbar {
-    width: 100vw;
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    position: sticky;
     top: 0;
+    z-index: 100000;
+    margin:0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    background-color:rgb(88, 1, 112);
+    font-family: "Google Sans";
+    box-shadow: 0px 16px 32px rgba( 0, 0, 0, 0.5);
+}
+
+body.darkmode .navbar{
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+    margin:0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    background-color:black;
+    font-family: "Google Sans";
+    box-shadow: 0px 16px 32px rgba( 0, 0, 0, 0.5);
+}
+
+.navbar li{
+    flex: 1;
+    display: block;
+    text-align: center;
+    color: rgb(252, 226, 255);
+    padding: 14px;
+}
+
+body.darkmode .navbar li{
+    flex: 1;
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 14px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgb(252, 226, 255);
+}
+
+body.darkmode .navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li:hover{
+    text-decoration: underline;
 }
 
 h1 {
@@ -55,6 +112,7 @@ body.darkmode .sources {
     transition: transform 0.5s ease-in-out;
     color: white;
     font-family: "Google Sans";
+    box-shadow: 10px 15px 0px rgb(53, 1, 67, 0);
 }
 
 .sources h3 {
@@ -65,6 +123,24 @@ body.darkmode .sources {
     transform: scale(1.1);
 }
 
+button {
+    color: rgb(252, 226, 255);
+    background-color: rgb(123, 8, 121);
+    width: 10vw;
+    height: 10vh;
+    border-radius: 50px;
+    border-color: rgb(252, 226, 255);
+}
+
+body.darkmode button {
+    color: white;
+    background-color: black;
+    width: 10vw;
+    height: 10vh;
+    border-radius: 50px;
+    border-color: white;
+}
+
 .dark {
-    margin-left: 0vw;
+    margin-left: 25vw;
 }
