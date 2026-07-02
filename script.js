@@ -28,6 +28,7 @@ let scriptContent = document.querySelector(".script-content");
 let pythonContent = document.querySelector(".python-content");
 let roboticsContent = document.querySelector(".robotics-content");
 let artContent = document.querySelector(".art-content");
+let startContent = document.querySelector(".start-content");
 
 
 experienceBtnRightTwo.style.display = "none";
@@ -38,6 +39,7 @@ scriptContent.style.display = "none";
 pythonContent.style.display = "none";
 roboticsContent.style.display = "none";
 artContent.style.display = "none"; 
+startContent.style.display = "block";
 
 function slideCarouselRightOne () {
     projectCard3.style.transform = "translate(-33vw, 0vh)";
@@ -204,6 +206,7 @@ experienceBtnRightTwo.addEventListener ("click", function() {
 
 art.addEventListener ("click", function(){
     styleContent.style.display = "none";
+    startContent.style.display = "none";
     indexContent.style.display = "none";
     scriptContent.style.display = "none";
     pythonContent.style.display = "none";
@@ -220,6 +223,7 @@ robotics.addEventListener ("click", function(){
     roboticsContent.style.display = "block";
     artContent.style.display = "none";
     roboticsContent.style.marginTop = "-20vh";
+    startContent.style.display = "none";
 });
 
 python.addEventListener ("click", function(){
@@ -230,6 +234,7 @@ python.addEventListener ("click", function(){
     roboticsContent.style.display = "none";
     artContent.style.display = "none";
     pythonContent.style.marginTop = "-20vh";
+    startContent.style.display = "none";
 });
 
 script.addEventListener ("click", function(){
@@ -240,6 +245,7 @@ script.addEventListener ("click", function(){
     roboticsContent.style.display = "none";
     artContent.style.display = "none";
     scriptContent.style.marginTop = "-20vh";
+    startContent.style.display = "none";
 });
 
 index.addEventListener ("click", function(){
@@ -250,6 +256,7 @@ index.addEventListener ("click", function(){
     roboticsContent.style.display = "none";
     artContent.style.display = "none";
     indexContent.style.marginTop = "-20vh";
+    startContent.style.display = "none";
 });
 
 style.addEventListener ("click", function(){
@@ -259,4 +266,5 @@ style.addEventListener ("click", function(){
     pythonContent.style.display = "none";
     roboticsContent.style.display = "none";
     artContent.style.display = "none";
+    startContent.style.display = "none";
 });

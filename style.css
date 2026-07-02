@@ -461,6 +461,12 @@ body.darkmode .project-card-2{
     align-self: center;
 }
 
+body.darkmode .project-card-2 img {
+    max-width: 20vw;
+    align-self: center;
+    filter: grayscale(100%);
+}
+
 .project-card-2 button:hover {
     text-decoration: underline;
 }
@@ -1081,6 +1087,39 @@ body.darkmode .index-content {
     color: rgb(252, 226, 255);
     transition: transform 1s ease-in-out;
 }
+
+.start-content {
+    margin-top: -26vh;
+    margin-left: 15vw;
+    background-color:rgb(88, 1, 112);
+    border-radius: 4%;
+    height: 27vw;
+    width: 25vw;
+    padding: 1.5vw;
+    text-align: center;
+    box-shadow: 10px 15px 0px rgb(53, 1, 67, 1);
+    position: relative;
+    color: rgb(252, 226, 255);
+    font-size: 2em;
+    z-index: bottom;
+}
+
+body.darkmode .start-content {
+    margin-top: -26vh;
+    margin-left: 15vw;
+    background-color:black;
+    border-radius: 4%;
+    height: 27vw;
+    width: 25vw;
+    padding: 1.5vw;
+    text-align: center;
+    box-shadow: 10px 15px 0px rgb(53, 1, 67, 0);
+    position: relative;
+    color: white;
+    font-size: 2em;
+    z-index: bottom;
+}
+
 
 body.darkmode .script-content {
     margin-top: -53vh;
