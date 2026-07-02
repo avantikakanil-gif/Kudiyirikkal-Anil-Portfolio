@@ -1308,3 +1308,10 @@ body.darkmode button {
     border-radius: 50px;
     border-color: white;
 }
+
+.dark {
+    position: relative;
+    top: -7vh;
+    margin-left: -85vw; 
+    height: 7vh;
+}
